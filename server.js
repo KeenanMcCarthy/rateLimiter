@@ -10,7 +10,7 @@ const interval = process.env.TINT;
 const maxRequests = process.env.MAXREQ;
 
 const pool = new Pool({
-  user: "postgres",
+  user: "*****",
   host: "localhost",
   database: "rlproject"+port,
   password: "******",
