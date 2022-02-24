@@ -8,12 +8,14 @@ const port = process.env.PORT;
 const loadBalancer = process.env.LB;
 const interval = process.env.TINT;
 const maxRequests = process.env.MAXREQ;
+const psqlUsername = process.env.PGUNAME;
+const psqlPassword = process.env.PGPSSWRD;
 
 const pool = new Pool({
-  user: "*****",
+  user: psqlUsername,
   host: "localhost",
   database: "rlproject"+port,
-  password: "******",
+  password: psqlPassword,
   port: "5432"
 });
 
