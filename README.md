@@ -7,3 +7,5 @@ balancer employs consistent hashing techniques to determine which databases will
 in which the majority of the queried databases must confirm a read or write to validated the request. The quorum threshold is defined in the config file, and determines the
 number of servers which must confirm the request for it to be processed. This ensures reliability, availability, and scalability while also allowing the end user to define
 the degree of fault tolerance and speed required for limiting requests to their end destination.
+
+To start the rate limiter, run the start.sh script, and use the stop.sh script to ensure a graceful shutdown.
